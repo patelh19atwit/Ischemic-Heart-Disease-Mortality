@@ -34,7 +34,7 @@ server = app.server
 
 app.layout = html.Div([
     html.H1("Ischemic Heart Disease Mortality", 
-            style={'textAlign': 'center', 'marginBottom': 30, 'color': "#33572F", 'fontFamily': 'sans-serif'}),
+            style={'textAlign': 'center', 'marginBottom': 30, 'color': "#023047", 'fontFamily': 'sans-serif'}),
 
  html.Div([
         html.Div([
@@ -46,7 +46,7 @@ app.layout = html.Div([
         ], style={'width': '48%', 'display': 'inline-block', 'verticalAlign': 'top', 'marginLeft': '4%'})
     ]),
 ], style={
-    'backgroundColor': "#DAF0BE",
+    'backgroundColor': "#fff0ce",
     'minHeight': '100vh',
     'margin': '0',
     'padding': '20px',
@@ -74,14 +74,14 @@ def update_la_chart(_):
         },
         
         color ='Count',
-        color_continuous_scale='peach'
+        color_continuous_scale='earth'
     )
 
     fig.update_layout(
         xaxis=dict(tickmode='linear'),
         showlegend=False,
-        plot_bgcolor="#CEE8AC",
-        paper_bgcolor="#CEE8AC"
+        plot_bgcolor="#fce9bb",
+        paper_bgcolor="#fce9bb"
     ) 
     
     return fig
@@ -102,14 +102,14 @@ def update_suf_chart(_):
             'Count': 'Number of Deaths'
         },
         color='Count',
-        color_continuous_scale='burg'
+        color_continuous_scale='mint'
     )
     
     fig.update_layout(
         xaxis=dict(tickmode='linear'),
         showlegend=False,
-        plot_bgcolor='#CEE8AC',
-        paper_bgcolor='#CEE8AC'
+        plot_bgcolor='#fce9bb',
+        paper_bgcolor='#fce9bb'
     )
     
     return fig
